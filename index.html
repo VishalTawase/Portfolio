@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishal Shahuraj Tawase - UI/UX Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+            color: #333;
+            background-color: #f8f8f8;
+        }
+
+        .container {
+            width: 85%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(45deg, #05a3f2, #2c92e4);
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            opacity: 0.8;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background: #333;
+            color: #fff;
+            padding: 12px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            padding: 0;
+            list-style: none;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #05a3f2;
+            text-decoration: underline;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 30px 0;
+            margin: 20px 0;
+            background: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #0078D7;
+            margin-bottom: 25px;
+            font-size: 2.5em;
+            font-weight: 600;
+        }
+
+        /* About Section */
+        #about p {
+            text-align: center;
+            font-size: 1.1em;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        /* Skills Section */
+        #skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #skills ul li {
+            background: #f4f4f4;
+            margin: 15px 0;
+            padding: 12px;
+            border-left: 5px solid #0078D7;
+            font-size: 1.2em;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        #skills ul li:hover {
+            background-color: #0078D7;
+            color: #fff;
+            transform: translateX(10px);
+        }
+
+        /* Projects Section */
+        .project {
+            background: #fff;
+            margin: 25px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .project h3 {
+            color: #0078D7;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .project p {
+            margin: 10px 0;
+            color: #555;
+        }
+
+        /* Certifications Section */
+        #certifications ul,
+        #additional-information ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #certifications ul li,
+        #additional-information ul li {
+            background: #f4f4f4;
+            margin: 12px 0;
+            padding: 12px;
+            border-left: 5px solid #0078D7;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+
+        #certifications ul li:hover,
+        #additional-information ul li:hover {
+            background-color: #f0f8ff;
+        }
+
+        #certifications ul li a,
+        #additional-information ul li a {
+            color: #0078D7;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        #certifications ul li a:hover,
+        #additional-information ul li a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        /* Contact Section */
+        #contact ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        #contact ul li {
+            margin: 15px 0;
+        }
+
+        #contact ul li a {
+            color: #0078D7;
+            font-size: 1.2em;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        #contact ul li a:hover {
+            color: #333;
+            text-decoration: underline;
+        }
+
+        /* Footer Styles */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+            font-size: 1.1em;
+        }
+
+        footer a {
+            color: #05a3f2;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Vishal Shahuraj Tawase</h1>
+            <p>Final-Year B.Tech Student | UI/UX Enthusiast | Full-Stack Developer</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#additional-information">Additional Information</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm <strong>Vishal Tawase</strong>, a passionate final-year B.Tech student specializing in
+                Computer Science Engineering with a focus on AI and Robotics. I thrive on bridging the gap between
+                technology and user needs, combining innovative problem-solving with a deep understanding of design
+                principles. With hands-on experience in full-stack development, machine learning, and cloud computing, I
+                have successfully contributed to diverse projects ranging from personal finance trackers to smart
+                elevator systems.</p>
+            <p>What sets me apart is my drive to create solutions that not only function efficiently but also offer an
+                exceptional user experience. I enjoy collaborating with multidisciplinary teams to bring ideas to life
+                and am always eager to learn and adopt emerging technologies. When I'm not coding or designing, you can
+                find me exploring new tech trends or contributing to open-source projects.</p>
+        </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>UI/UX Tools:</strong> Figma, Adobe XD</li>
+                <li><strong>Programming Languages:</strong> Java, C, C++, Python</li>
+                <li><strong>Web Development:</strong> HTML, CSS, React.js, Bootstrap</li>
+                <li><strong>Full Stack:</strong> MERN Stack (MongoDB, Express.js, React.js, Node.js)</li>
+                <li><strong>Other Skills:</strong> Cloud Computing, Database Management, AI & Robotics</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Personal Finance Tracker</h3>
+                <p>Developed a web application to simplify personal finance management, featuring expense tracking,
+                    budgeting, and data visualization.</p>
+                <p><strong>Technologies:</strong> React.js, Node.js, MongoDB</p>
+            </div>
+
+            <div class="project">
+                <h3>Smart Elevator Occupancy Limiter System</h3>
+                <p>Enhanced elevator safety and efficiency using YOLOv3 object detection with real-time monitoring and
+                    alert dashboards.</p>
+                <p><strong>Technologies:</strong> YOLOv3, Python</p>
+            </div>
+
+            <div class="project">
+                <h3>Robotic Arm Manipulator</h3>
+                <p>Designed a robotic arm for object classification and manipulation, programmed with efficient control
+                    algorithms.</p>
+                <p><strong>Technologies:</strong> Arduino, Python</p>
+            </div>
+
+            <div class="project">
+                <h3>Hand Sign Detection Using Machine Learning</h3>
+                <p>Built a model for real-time hand gesture recognition with applications in accessibility and
+                    human-computer interaction.</p>
+                <p><strong>Technologies:</strong> TensorFlow</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <div class="container">
+            <h2>Certifications</h2>
+            <ul>
+                <li><strong>AWS Certified Cloud Practitioner</strong> - Issued by Amazon<br>
+                    <a href="https://www.credly.com/badges/516c9468-16d7-440b-ae55-19517b7467a7/linked_in_profile"
+                        target="_blank">View Certification</a>
+                </li>
+                <li><strong>Full Stack Development</strong> - Issued by Capabl<br>
+                    <a href="https://drive.google.com/file/d/1COSDlMcWqphxcaAClgcAoxciV33aM8yU/view"
+                        target="_blank">View Certification</a>
+                </li>
+                <li><strong>MERN Full Stack Internship</strong><br>
+                    <a href="https://drive.google.com/file/d/1N7vyJhHTSptzsrCWxSw28YPL5bvxLSMK/view"
+                        target="_blank">View Certification</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="additional-information">
+        <div class="container">
+            <h2>Additional Information</h2>
+            <ul>
+                <li><strong>Certified in Cloud Computing</strong> by IIT Kharagpur<br>
+                    <a href="https://drive.google.com/file/d/1i17gj5oPmCy9A8IFNLTI-7xuqf9O5ovV/view"
+                        target="_blank">View Certification</a>
+                </li>
+                <li><strong>AI For India 2.0</strong> - Offered by National Skill Development Corporation<br>
+                    <a href="https://www.guvi.in/verify-certificate?id=fT50zsv7J19667R652&course=ai_for_in_en"
+                        target="_blank">View Certification</a>
+                </li>
+                <li><strong>Crash Course on Python</strong> - Google (Coursera)<br>
+                    <a href="https://www.coursera.org/account/accomplishments/certificate/MEYPWZZRV5LW"
+                        target="_blank">View Certification</a>
+                </li>
+                <li><strong>Other Certifications</strong><br>
+                    <a href="http://surl.li/jqxky" target="_blank">View Certifications</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:vishaltawase2003@gmail.com">vishaltawase2003@gmail.com</a>
+                </li>
+                <li><strong>LinkedIn:</strong> <a href="http://linkedin.com/in/vishal-tawase-034418226"
+                        target="_blank">linkedin.com/in/vishal-tawase</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/VishalTawase"
+                        target="_blank">github.com/VishalTawase</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Vishal Tawase. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
